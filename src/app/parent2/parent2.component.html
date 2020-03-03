@@ -1,0 +1,7 @@
+<div *ngIf="!stopClicked">
+    <app-child2 (counter)="recievedData($event)"></app-child2>
+</div>
+
+<div *ngIf="stopClicked">
+    <h2>The total elapsed time is: = {{ currentCounter }}</h2>
+</div>
